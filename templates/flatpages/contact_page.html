@@ -1,0 +1,20 @@
+{% extends 'flatpages/default.html' %}
+{% load static %}
+
+{% block title %}
+    {{ flatpages.title }}
+{% endblock title %}
+
+{% block content %}
+    <h2>
+        {{ flatpages.title }}
+    </h2>
+    <h2 style="font-family: Arial">Contact us!</h2>
+    {{ flatpage.content }}
+    <hr>
+    <br><br>
+    <div class="home-image-wrapper">
+        <img class="home-image" src="{% static 'assets/star.png' %}">
+    </div>
+
+{% endblock content %}
